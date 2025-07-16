@@ -49,7 +49,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     
-    
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
@@ -66,4 +65,4 @@ jobs:
         with:
           app-name: 'finapi-mattmooney'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F4EB6DF4A53644BBAC79BA2DE138CD59 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_053E2EEFBE754B599340E2123BD41592 }}
